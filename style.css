@@ -1,0 +1,103 @@
+/*
+  Profile page styles. Same look as the SystemGenes blog.
+  Colours live in the :root blocks; change them there.
+*/
+
+:root {
+  --bg: #fcfcfb;
+  --fg: #1f2328;
+  --muted: #6b7280;
+  --line: #e7e7e3;
+  --accent: #0b5fff;
+  --chip-bg: #f3f3ef;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* Dark mode follows the visitor's system setting. Delete this block for light only. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --fg: #e6e6e6;
+    --muted: #8b949e;
+    --line: #262a31;
+    --accent: #6ea8ff;
+    --chip-bg: #181b21;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.7 var(--sans);
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Header */
+.site-header { padding: 2.2rem 0 1.4rem; border-bottom: 1px solid var(--line); }
+h1 { margin: 0; font-size: 2rem; line-height: 1.2; letter-spacing: -.02em; }
+.role { margin: .3rem 0 0; font-size: 1.1rem; }
+.meta { margin: .2rem 0 0; font: .85rem var(--mono); color: var(--muted); }
+.links { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; margin: .9rem 0 0; font-size: .95rem; }
+
+/* Sections */
+main { padding: 1rem 0 2.5rem; }
+section { margin-top: 2.2rem; }
+h2 {
+  margin: 0 0 .9rem; padding-bottom: .35rem;
+  font: .75rem var(--mono); font-weight: 400;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+p { margin: 0 0 .9rem; }
+ul { margin: 0 0 .9rem; padding-left: 1.2rem; }
+li { margin: .25rem 0; }
+
+/* Skills */
+.skills { display: grid; grid-template-columns: 9rem 1fr; gap: .45rem 1rem; margin: 0; }
+.skills dt { font: .85rem var(--mono); color: var(--muted); padding-top: .15rem; }
+.skills dd { margin: 0; }
+
+/* Experience, projects, education */
+.entry { margin: 0 0 1.6rem; }
+.entry-head {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 0 1rem; margin-bottom: .3rem;
+}
+h3 { margin: 0; font-size: 1.05rem; font-weight: 600; line-height: 1.4; }
+.when { font: .8rem var(--mono); color: var(--muted); }
+
+/* Tech tags */
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: .6rem 0 0; }
+.tags li {
+  margin: 0; padding: .05rem .65rem; font-size: .8rem; color: var(--muted);
+  background: var(--chip-bg); border: 1px solid var(--line); border-radius: 999px;
+}
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); padding: 1.4rem 0 3rem; font: .8rem var(--mono); color: var(--muted); }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.7rem; }
+  .skills { grid-template-columns: 1fr; gap: 0; }
+  .skills dd { margin-bottom: .7rem; }
+}
+
+/* Print / Save as PDF from the browser */
+@media print {
+  :root { --bg: #fff; --fg: #000; --muted: #444; --line: #ccc; --accent: #000; --chip-bg: #fff; }
+  body { font-size: 11pt; line-height: 1.45; }
+  .site-header { padding-top: 0; }
+  section { margin-top: 1.2rem; break-inside: avoid-page; }
+  .entry { break-inside: avoid; }
+  a { text-decoration: none; }
+  .links a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; color: var(--muted); }
+}

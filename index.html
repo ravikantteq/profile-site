@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Ravi Kant Pandey · Senior Software Systems Architect</title>
+  <meta name="description" content="Senior backend and systems engineer with 12+ years building real-time, concurrent software for robot fleets. Elixir, C/C++ and Go.">
+  <meta property="og:title" content="Ravi Kant Pandey · Senior Software Systems Architect">
+  <meta property="og:description" content="Real-time, concurrent systems for robot fleets. Elixir, C/C++ and Go.">
+  <meta property="og:type" content="profile">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  HOW TO EDIT THIS PAGE (on github.com: open this file, click the pencil icon, edit, then "Commit changes")
+  - Change text between the tags. Keep the tags themselves.
+  - To add a project or a job: copy a whole <article> ... </article> block, paste it below, edit the text.
+  - To add a skill tag: copy one <li>...</li> line.
+  - The site updates about a minute after you commit.
+-->
+
+<header class="site-header">
+  <div class="wrap">
+    <h1>Ravi Kant Pandey</h1>
+    <p class="role">Senior Software Systems Architect</p>
+    <p class="meta">New Delhi, India</p>
+    <p class="links">
+      <a href="mailto:ravi240291@gmail.com">ravi240291@gmail.com</a>
+      <a href="https://www.systemgenes.com">Blog: SystemGenes</a>
+      <!-- Remove the comment markers around a line to show it, and put in your own address:
+      <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+      <a href="https://github.com/your-username">GitHub</a>
+      -->
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>Profile</h2>
+    <p>Senior backend and systems engineer with 12+ years building real-time, concurrent software for robot fleets. Hands-on in Elixir, C/C++ and Go, and owner of architecture and technology decisions.</p>
+    <ul>
+      <li>Architected control software for 600+ autonomous robots: motion and path planning (A*, RHCR), navigation, task orchestration.</li>
+      <li>Hardware-software integration: robot-facing protocols, IPC, sockets, multithreading, Linux system programming.</li>
+      <li>Led end-to-end design of multiple systems; strong in data structures, algorithms and distributed systems.</li>
+      <li>Performance and reliability: concurrency, fault tolerance, monitoring, low-latency tuning.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt>
+      <dd>C/C++, Elixir, Go, Python</dd>
+      <dt>Systems</dt>
+      <dd>Linux internals, IPC, sockets, multithreading, message queues (Kafka, RabbitMQ)</dd>
+      <dt>Data and infra</dt>
+      <dd>Postgres, Redis, MongoDB, Docker, AWS, Camunda</dd>
+      <dt>Tools</dt>
+      <dd>Git, Jira, GDB, Wireshark</dd>
+    </dl>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Senior Member Technical Staff, GreyOrange</h3>
+        <span class="when">Mar 2016 – Present</span>
+      </div>
+      <p>Backend and systems engineering for warehouse robotics. The main work is described under Projects below.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer, Techequity Technologies</h3>
+        <span class="when">Sep 2015 – Feb 2016</span>
+      </div>
+      <ul>
+        <li>Designed and built backend APIs and indexing/search features for a video streaming application.</li>
+      </ul>
+      <ul class="tags">
+        <li>Go</li><li>Data structures</li><li>Algorithms</li><li>NoSQL</li><li>AWS</li><li>Linux</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer, Aricent Technologies</h3>
+        <span class="when">Dec 2013 – Sep 2015</span>
+      </div>
+      <ul>
+        <li>Contributed to the LTE Data Link Layer, implementing round-robin and QoS schedulers for efficient data processing in a protocol-driven stack.</li>
+        <li>Built a logging framework that cut CPU usage from 30% to about 8% per second.</li>
+      </ul>
+      <ul class="tags">
+        <li>C</li><li>IPC</li><li>Sockets</li><li>Data structures</li><li>Linux</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Sorter</h3>
+        <span class="when">Warehouse robotics control system</span>
+      </div>
+      <ul>
+        <li>Architected and built the backend control layer coordinating 600+ autonomous robots concurrently under real-time constraints.</li>
+        <li>Designed the movement, navigation, task-scheduling and business-logic modules, and the IPC, socket and message-queue communication between them.</li>
+        <li>Optimised the in-memory database layer, improving concurrent reads of critical sections by about 10%.</li>
+      </ul>
+      <ul class="tags">
+        <li>Elixir</li><li>C</li><li>IPC</li><li>Sockets</li><li>Message queues</li><li>Linux</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Inventory Management System</h3>
+        <span class="when">Multi-warehouse platform</span>
+      </div>
+      <ul>
+        <li>Led design of a multi-warehouse platform handling thousands of items across distributed nodes, with APIs and service modules integrating robotic picking and sorter systems.</li>
+        <li>Built consistency checks and monitoring for accurate real-time state across nodes under high-load order processing.</li>
+      </ul>
+      <ul class="tags">
+        <li>Elixir</li><li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Postgres</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Barcode Decoding Solution</h3>
+        <span class="when">High-rate sensor data pipeline</span>
+      </div>
+      <ul>
+        <li>Parallelised decoding of 10 Gbps image streams to reach under 500 ms decoding throughput.</li>
+        <li>Improved multithreaded decoding efficiency by 2–3% while cutting CPU load by about 25%.</li>
+      </ul>
+      <ul class="tags">
+        <li>C</li><li>IPC</li><li>Multithreading</li><li>Linux internals</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <article class="entry">
+      <div class="entry-head">
+        <h3>B.Tech, Computer Science and Engineering, KIIT University</h3>
+        <span class="when">2009 – 2013</span>
+      </div>
+      <p>GPA 8.1/10</p>
+    </article>
+  </section>
+
+  <section id="recognition">
+    <h2>Recognition</h2>
+    <ul>
+      <li>Best Technical Performance Annual Award, GreyOrange Robotics</li>
+      <li>Excellence Award (Team), LTE Layer 2 Product, Aricent</li>
+      <li>Best Performance Award, Aricent</li>
+    </ul>
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <p>Notes on C, Linux, Go and debugging at <a href="https://www.systemgenes.com">systemgenes.com</a>.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Updated November 2026</div>
+</footer>
+
+</body>
+</html>
