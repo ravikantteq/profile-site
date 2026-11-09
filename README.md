@@ -4,16 +4,16 @@ Personal profile page, served at https://profile.systemgenes.com through GitHub 
 
 ## Files
 
-- `index.html`: all the content (profile, skills, experience, projects, education)
+- `index.html`: all the content (profile, work, skills, education)
 - `style.css`: the look; colours are at the top
 - `CNAME`: tells GitHub Pages the custom domain. Do not delete or rename it.
 
 ## Editing on github.com
 
 1. Open `index.html` and click the pencil icon.
-2. Change the text between the tags. To add a project or job, copy a whole `<article> ... </article>` block and edit the copy.
+2. Change the text between the tags. To add a project, copy a whole `<div class="project"> ... </div>` block inside the right company and edit the copy. To add a company, copy a whole `<article class="company"> ... </article>` block.
 3. Click "Commit changes". The site updates in about a minute.
 
-## Keep private things out
+## Print and PDF
 
-This repository has to be public for free GitHub Pages, so everything in it is public. The page deliberately leaves out phone number and street address. Add them only if you are comfortable with that.
+The Print / Save as PDF button opens the browser's print dialog, which uses a compact print layout. Visitors choose "Save as PDF" there.
