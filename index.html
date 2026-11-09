@@ -16,8 +16,9 @@
 <!--
   HOW TO EDIT THIS PAGE (on github.com: open this file, click the pencil icon, edit, then "Commit changes")
   - Change text between the tags. Keep the tags themselves.
-  - To add a project: copy a whole <div class="project"> ... </div> block inside the right company and edit it.
-  - To add a company: copy a whole <article class="company"> ... </article> block.
+  - To add a project: copy a whole <div class="project"> ... </div> block, paste it where you want it, and edit it.
+    The small label on the right of the project title is the company and year.
+  - Projects show in the order they appear in this file. Cut and paste a block to move it.
   - To add a skill tag: copy one <li>...</li> line.
   - The site updates about a minute after you commit.
 -->
@@ -36,7 +37,6 @@
     </p>
     <p class="actions">
       <button class="btn" type="button" onclick="window.print()">Print / Save as PDF</button>
-      <a class="btn" href="mailto:?subject=Ravi%20Kant%20Pandey%20-%20profile&amp;body=Profile%3A%20https%3A%2F%2Fprofile.systemgenes.com">Email this to me</a>
     </p>
   </div>
 </header>
@@ -57,84 +57,75 @@
   <section id="work">
     <h2>Work</h2>
 
-    <article class="company">
+    <div class="project">
       <div class="entry-head">
-        <h3>GreyOrange</h3>
-        <span class="when">Mar 2016 – Present</span>
-      </div>
-      <p class="job-title">Senior Member Technical Staff</p>
-
-      <div class="project">
         <h4>Sorter <span class="sub">Warehouse robotics control system</span></h4>
-        <ul>
-          <li>Architected and built the backend control layer coordinating 600+ autonomous robots concurrently under real-time constraints.</li>
-          <li>Designed the movement, navigation, task-scheduling and business-logic modules, and the IPC, socket and message-queue communication between them.</li>
-          <li>Optimised the in-memory database layer, improving concurrent reads of critical sections by about 10%.</li>
-        </ul>
-        <ul class="tags">
-          <li>Elixir</li><li>C</li><li>IPC</li><li>Sockets</li><li>Message queues</li><li>Linux</li>
-        </ul>
+        <span class="when">GreyOrange · 2020</span>
       </div>
+      <ul>
+        <li>Architected and built the backend control layer coordinating 600+ autonomous robots concurrently under real-time constraints.</li>
+        <li>Designed the movement, navigation, task-scheduling and business-logic modules, and the IPC, socket and message-queue communication between them.</li>
+        <li>Optimised the in-memory database layer, improving concurrent reads of critical sections by about 10%.</li>
+      </ul>
+      <ul class="tags">
+        <li>Elixir</li><li>C</li><li>IPC</li><li>Sockets</li><li>Message queues</li><li>Linux</li>
+      </ul>
+    </div>
 
-      <div class="project">
+    <div class="project">
+      <div class="entry-head">
         <h4>Inventory Management System <span class="sub">Multi-warehouse platform</span></h4>
-        <ul>
-          <li>Led design of a multi-warehouse platform handling thousands of items across distributed nodes, with APIs and service modules integrating robotic picking and sorter systems.</li>
-          <li>Built consistency checks and monitoring for accurate real-time state across nodes under high-load order processing.</li>
-        </ul>
-        <ul class="tags">
-          <li>Elixir</li><li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Postgres</li>
-        </ul>
+        <span class="when">GreyOrange · 2025</span>
       </div>
+      <ul>
+        <li>Led design of a multi-warehouse platform handling thousands of items across distributed nodes, with APIs and service modules integrating robotic picking and sorter systems.</li>
+        <li>Built consistency checks and monitoring for accurate real-time state across nodes under high-load order processing.</li>
+      </ul>
+      <ul class="tags">
+        <li>Elixir</li><li>Kafka</li><li>RabbitMQ</li><li>Redis</li><li>Postgres</li>
+      </ul>
+    </div>
 
-      <div class="project">
+    <div class="project">
+      <div class="entry-head">
         <h4>Barcode Decoding Solution <span class="sub">High-rate sensor data pipeline</span></h4>
-        <ul>
-          <li>Parallelised decoding of 10 Gbps image streams to reach under 500 ms decoding throughput.</li>
-          <li>Improved multithreaded decoding efficiency by 2–3% while cutting CPU load by about 25%.</li>
-        </ul>
-        <ul class="tags">
-          <li>C</li><li>IPC</li><li>Multithreading</li><li>Linux internals</li>
-        </ul>
+        <span class="when">GreyOrange · 2017</span>
       </div>
-    </article>
+      <ul>
+        <li>Parallelised decoding of 10 Gbps image streams to reach under 500 ms decoding throughput.</li>
+        <li>Improved multithreaded decoding efficiency by 2–3% while cutting CPU load by about 25%.</li>
+      </ul>
+      <ul class="tags">
+        <li>C</li><li>IPC</li><li>Multithreading</li><li>Linux internals</li>
+      </ul>
+    </div>
 
-    <article class="company">
+    <div class="project">
       <div class="entry-head">
-        <h3>Techequity Technologies</h3>
-        <span class="when">Sep 2015 – Feb 2016</span>
-      </div>
-      <p class="job-title">Software Engineer</p>
-
-      <div class="project">
         <h4>Video streaming backend <span class="sub">APIs and search</span></h4>
-        <ul>
-          <li>Designed and built backend APIs and indexing/search features for a video streaming application.</li>
-        </ul>
-        <ul class="tags">
-          <li>Go</li><li>Data structures</li><li>Algorithms</li><li>NoSQL</li><li>AWS</li><li>Linux</li>
-        </ul>
+        <span class="when">Techequity · 2015–16</span>
       </div>
-    </article>
+      <ul>
+        <li>Designed and built backend APIs and indexing/search features for a video streaming application.</li>
+      </ul>
+      <ul class="tags">
+        <li>Go</li><li>Data structures</li><li>Algorithms</li><li>NoSQL</li><li>AWS</li><li>Linux</li>
+      </ul>
+    </div>
 
-    <article class="company">
+    <div class="project">
       <div class="entry-head">
-        <h3>Aricent Technologies</h3>
-        <span class="when">Dec 2013 – Sep 2015</span>
-      </div>
-      <p class="job-title">Software Engineer</p>
-
-      <div class="project">
         <h4>LTE Data Link Layer <span class="sub">Protocol-driven stack</span></h4>
-        <ul>
-          <li>Contributed to the LTE Data Link Layer, implementing round-robin and QoS schedulers for efficient data processing in a protocol-driven stack.</li>
-          <li>Built a logging framework that cut CPU usage from 30% to about 8% per second.</li>
-        </ul>
-        <ul class="tags">
-          <li>C</li><li>IPC</li><li>Sockets</li><li>Data structures</li><li>Linux</li>
-        </ul>
+        <span class="when">Aricent · 2013–15</span>
       </div>
-    </article>
+      <ul>
+        <li>Contributed to the LTE Data Link Layer, implementing round-robin and QoS schedulers for efficient data processing in a protocol-driven stack.</li>
+        <li>Built a logging framework that cut CPU usage from 30% to about 8% per second.</li>
+      </ul>
+      <ul class="tags">
+        <li>C</li><li>IPC</li><li>Sockets</li><li>Data structures</li><li>Linux</li>
+      </ul>
+    </div>
   </section>
 
   <section id="skills">
@@ -160,15 +151,6 @@
       </div>
       <p class="job-title">B.Tech, Computer Science and Engineering · GPA 8.1/10</p>
     </article>
-  </section>
-
-  <section id="recognition">
-    <h2>Recognition</h2>
-    <ul>
-      <li>Best Technical Performance Annual Award, GreyOrange Robotics</li>
-      <li>Excellence Award (Team), LTE Layer 2 Product, Aricent</li>
-      <li>Best Performance Award, Aricent</li>
-    </ul>
   </section>
 
   <section id="writing">
