@@ -1,6 +1,6 @@
 # Profile site
 
-Personal profile page, served at https://profile.systemgenes.com through GitHub Pages.
+Personal profile page, served at https://profile.systemgenes.com through GitHub Pages and existing domain.
 
 ## Files
 
